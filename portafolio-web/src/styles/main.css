@@ -1,0 +1,161 @@
+/*
+ * 1. Estilos generales
+ * Aplica el color de fondo oscuro y la fuente principal.
+ */
+body {
+    background-color: #0d1117; /* Un gris oscuro casi negro */
+    color: #c9d1d9; /* Gris claro para el texto por defecto */
+    font-family: 'Inter', sans-serif; /* O la fuente que elijas */
+}
+
+/*
+ * 2. Estilos para la barra de navegación
+ */
+.navbar {
+    background-color: rgba(13, 17, 23, 0.8); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto de borroso */
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*
+ * 3. Estilos para la sección principal (Hero)
+ */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('URL_DE_TU_IMAGEN_DE_FONDO');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+.greeting-text {
+    color: #64ffda; /* El color verde vibrante */
+    font-family: 'Fira Code', monospace; /* Para un toque de programador */
+}
+
+/*
+ * 4. Estilos para el botón
+ */
+.btn-outline-success {
+    color: #64ffda;
+    border-color: #64ffda;
+    transition: all 0.3s ease;
+}
+.btn-outline-success:hover {
+    background-color: #64ffda;
+    color: #0d1117;
+}
+
+/*
+ * 5. Estilos para la barra lateral de redes sociales
+ */
+.social-sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 2rem; /* Separación del borde izquierdo */
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-sidebar a {
+    color: #8892b0; /* Un gris más oscuro para los íconos */
+    font-size: 1.5rem;
+    padding: 0.8rem 0; /* Espaciado entre los íconos */
+    display: block;
+    transition: color 0.3s ease;
+}
+.social-sidebar a:hover {
+    color: #64ffda; /* Cambio de color al pasar el ratón */
+}
+.social-sidebar .line {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: #8892b0;
+    margin-top: 1rem;
+}
+
+/*
+ * 6. Estilos para la sección "About Me"
+ */
+.about-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.about-section .title-heading {
+    color: #64ffda;
+    font-family: 'Fira Code', monospace;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/*
+ * 7. Estilos para la sección de Proyectos
+ */
+.projects-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.projects-section .title-heading {
+    color: #64ffda;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.featured-project {
+    margin-top: 5rem;
+}
+.project-type {
+    color: #64ffda;
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+}
+.project-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c9d1d9;
+    margin-bottom: 1rem;
+}
+.project-description {
+    background-color: #172a45;
+    color: #8892b0;
+    line-height: 1.6;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+.project-tech-list {
+    color: #8892b0;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+}
+
+/*
+ * 8. Estilos de Responsive (para móviles)
+ */
+@media (max-width: 768px) {
+    .social-sidebar {
+        display: none !important;
+    }
+}
