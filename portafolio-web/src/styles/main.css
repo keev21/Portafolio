@@ -1,19 +1,18 @@
 /*
  * 1. Estilos generales
- * Aplica el color de fondo oscuro y la fuente principal.
  */
 body {
-    background-color: #0d1117; /* Un gris oscuro casi negro */
-    color: #c9d1d9; /* Gris claro para el texto por defecto */
-    font-family: 'Inter', sans-serif; /* O la fuente que elijas */
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Inter', sans-serif;
 }
 
 /*
  * 2. Estilos para la barra de navegación
  */
 .navbar {
-    background-color: rgba(13, 17, 23, 0.8); /* Fondo semi-transparente */
-    backdrop-filter: blur(10px); /* Efecto de borroso */
+    background-color: rgba(13, 17, 23, 0.8);
+    backdrop-filter: blur(10px);
 }
 .navbar-brand {
     font-size: 2rem;
@@ -41,8 +40,8 @@ body {
     z-index: -1;
 }
 .greeting-text {
-    color: #64ffda; /* El color verde vibrante */
-    font-family: 'Fira Code', monospace; /* Para un toque de programador */
+    color: #64ffda;
+    font-family: 'Fira Code', monospace;
 }
 
 /*
@@ -64,7 +63,7 @@ body {
 .social-sidebar {
     position: fixed;
     bottom: 0;
-    left: 2rem; /* Separación del borde izquierdo */
+    left: 2rem;
     z-index: 1000;
     list-style: none;
     padding: 0;
@@ -74,14 +73,14 @@ body {
     align-items: center;
 }
 .social-sidebar a {
-    color: #8892b0; /* Un gris más oscuro para los íconos */
+    color: #8892b0;
     font-size: 1.5rem;
-    padding: 0.8rem 0; /* Espaciado entre los íconos */
+    padding: 0.8rem 0;
     display: block;
     transition: color 0.3s ease;
 }
 .social-sidebar a:hover {
-    color: #64ffda; /* Cambio de color al pasar el ratón */
+    color: #64ffda;
 }
 .social-sidebar .line {
     content: '';
@@ -152,7 +151,73 @@ body {
 }
 
 /*
- * 8. Estilos de Responsive (para móviles)
+ * 8. Estilos para la sección de Habilidades
+ */
+.skills-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.skills-section .title-heading {
+    color: #64ffda;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.skills-category {
+    margin-bottom: 4rem;
+}
+.skills-category .category-title {
+    color: #c9d1d9;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #64ffda;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+.skill-item .skill-icon {
+    width: 60px;
+    height: auto;
+}
+.skill-item .skill-name {
+    font-size: 0.9rem;
+    color: #8892b0;
+    margin-top: 0.5rem;
+}
+
+/*
+ * 9. Estilos para la sección de Contacto
+ */
+.contact-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.contact-section .what-s-next-text {
+    color: #64ffda;
+    font-family: 'Fira Code', monospace;
+}
+.contact-section .get-in-touch-heading {
+    color: #c9d1d9;
+}
+.contact-section .contact-text {
+    color: #8892b0;
+    max-width: 600px;
+}
+.email-container {
+    background-color: #172a45;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.email-text {
+    color: #64ffda;
+    font-family: 'Fira Code', monospace;
+}
+#copy-email-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+/*
+ * 10. Estilos de Responsive (para móviles)
  */
 @media (max-width: 768px) {
     .social-sidebar {

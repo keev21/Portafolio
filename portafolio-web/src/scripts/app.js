@@ -1,15 +1,24 @@
-// Este archivo contiene el código JavaScript para la funcionalidad del portafolio. 
-// Puede incluir interacciones y dinámicas para mejorar la experiencia del usuario.
+document.addEventListener('DOMContentLoaded', function() {
+    const copyButton = document.getElementById('copy-email-btn');
+    const emailToCopy = document.getElementById('email-to-copy');
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Aquí puedes agregar la lógica para interacciones y dinámicas del portafolio.
-    console.log('El portafolio ha sido cargado correctamente.');
-
-    // Ejemplo de una función para manejar un evento de clic en un botón
-    const button = document.getElementById('mi-boton');
-    if (button) {
-        button.addEventListener('click', () => {
-            alert('¡Botón clickeado!');
+    if (copyButton && emailToCopy) {
+        copyButton.addEventListener('click', function() {
+            // Se usa el API de portapapeles moderno para copiar texto
+            navigator.clipboard.writeText(emailToCopy.textContent)
+                .then(() => {
+                    // Feedback visual o de texto para el usuario
+                    console.log('Correo copiado al portapapeles!');
+                    // Opcional: cambiar el texto del botón temporalmente
+                    const originalText = copyButton.innerHTML;
+                    copyButton.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                    setTimeout(() => {
+                        copyButton.innerHTML = originalText;
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('Error al copiar el correo: ', err);
+                });
         });
     }
 });
