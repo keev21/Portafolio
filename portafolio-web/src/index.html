@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Kevin Sánchez</title>
-
+    <meta name="description" content="Portafolio de Kevin Sánchez, Ingeniero de Software especializado en desarrollo web y móvil con Angular, Django y PHP.">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -46,8 +47,8 @@
                 <div class="col-md-8">
                     <p class="greeting-text">Hola, mi nombre es</p>
                     <h1 class="display-1 fw-bold">Kevin Sánchez</h1>
-                    <h2 class="display-3 text-muted">Construyendo el software del mañana.</h2>
-                    <p class="lead mt-4">Soy un ingeniero de software apasionado y dedicado, con una sólida base en el desarrollo de aplicaciones web y móviles. Me especializo en el ecosistema JavaScript/TypeScript, y tengo experiencia en el desarrollo full-stack, incluyendo el manejo de bases de datos y la gestión de versiones. Me mantengo al día con las últimas tendencias de la industria, y busco crecer y aplicar nuevas tecnologías constantemente.</p>
+                    <h2 class="display-3 text-muted">Ingeniero de Software</h2>
+                    <p class="lead mt-4">Desarrollo soluciones web y móviles robustas con un enfoque en el ecosistema JavaScript/TypeScript. Mis habilidades abarcan el desarrollo full-stack, desde la interfaz de usuario con Angular/Ionic hasta el backend con Django y PHP, con dominio de bases de datos como MySQL y PostgreSQL.</p>
                     <a href="#contact" class="btn btn-outline-success mt-4">Ponte en Contacto</a>
                 </div>
             </div>
@@ -59,9 +60,8 @@
             <h2 class="title-heading">Sobre Mí</h2>
             <div class="row mt-4">
                 <div class="col-lg-8">
-                    <p>Soy **Kevin Sánchez**, un **ingeniero de software** apasionado y dedicado, con una sólida base en el desarrollo de aplicaciones web y móviles. Mi experiencia abarca el espectro completo del desarrollo full-stack, desde la creación de interfaces de usuario dinámicas hasta la gestión de bases de datos robustas. Me especializo en el ecosistema **JavaScript/TypeScript** con frameworks como **Angular** y **Node.js**, además de contar con experiencia en el backend utilizando **Python (Django)** y **PHP**. </p>
-                    <p class="mt-4">Mi enfoque se centra en la construcción de soluciones eficientes y escalables. Me siento cómodo trabajando con bases de datos relacionales como **MySQL** y **PostgreSQL**, así como con **SQLite** para proyectos más ligeros. A lo largo de mi carrera, he perfeccionado mis habilidades en la gestión de versiones con **Git**, lo que me permite colaborar de manera efectiva y mantener un flujo de trabajo organizado.</p>
-                    <p class="mt-4">Más allá del código, me mantengo al día con las últimas tendencias de la industria y busco continuamente oportunidades para crecer y aplicar nuevas tecnologías. Mi compromiso con el aprendizaje constante, junto con mis habilidades de comunicación en **español** e **inglés (B2 certificado)**, me permiten integrarme fácilmente en equipos de desarrollo y contribuir de forma significativa a proyectos desafiantes. Estoy entusiasmado por aplicar mi experiencia en nuevos retos y ayudar a construir la próxima generación de experiencias digitales.</p>
+                    <p>Soy Kevin Sánchez, un ingeniero de software dedicado a crear aplicaciones eficientes y escalables. Tengo una sólida experiencia en desarrollo full-stack, con un enfoque en tecnologías modernas como Angular, Ionic y Node.js. También tengo un conocimiento práctico de Python (Django) y PHP para el desarrollo del backend. Mi experiencia incluye la gestión de bases de datos relacionales (MySQL, PostgreSQL) y un fuerte manejo de control de versiones con Git.</p>
+                    <p class="mt-4">Mi pasión es el aprendizaje continuo y la aplicación de nuevas tecnologías para resolver problemas complejos. Me comunico fluidamente en español e inglés (B2 certificado), lo que me permite colaborar de manera efectiva en equipos internacionales. Busco un entorno desafiante donde pueda aplicar mis habilidades y crecer profesionalmente.</p>
                 </div>
             </div>
         </div>
@@ -70,9 +70,106 @@
     <section id="projects" class="projects-section py-5">
         <div class="container">
             <h2 class="title-heading">Proyectos Destacados</h2>
-            <p class="text-muted text-center mb-5">
-                (Esta sección será completada una vez que recopiles tus proyectos. Puedes usar las plantillas que ya hemos creado.)
-            </p>
+            
+            <div class="featured-project mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="../img/tickets/Imagen pegada (5).png" class="img-fluid rounded clickable-img" alt="Captura de pantalla de Manager Tickets" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="project-details">
+                            <p class="project-type">Proyecto Destacado</p>
+                            <h3 class="project-title">Manager Tickets (Django)</h3>
+                            <div class="project-description p-4 my-3">
+                                <ul>
+                                    <li>Sistema de gestión de tickets con IA integrada para optimizar el flujo de trabajo de soporte técnico.</li>
+                                    <li>Arquitectura jerárquica con roles específicos (admin, técnico, etc.) para control de acceso dinámico.</li>
+                                    <li>Dashboard con métricas clave como el estado de los tickets, tendencias, MTTR y satisfacción del cliente.</li>
+                                </ul>
+                            </div>
+                            <ul class="project-tech-list d-flex flex-wrap list-unstyled mt-3">
+                                <li class="me-3">Django</li><li class="me-3">Python</li><li class="me-3">SQLite</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-project mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="URL_IMAGEN_APM_UCI" class="img-fluid rounded" alt="Captura de pantalla de APM UCI">
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="project-details">
+                            <p class="project-type">Proyecto Destacado</p>
+                            <h3 class="project-title">APM UCI (Angular/Ionic)</h3>
+                            <div class="project-description p-4 my-3">
+                                <ul>
+                                    <li>Sistema web/móvil para la gestión deportiva universitaria.</li>
+                                    <li>Módulos para la gestión integral de equipos deportivos, con registro de jugadores y perfiles de estudiantes-atletas.</li>
+                                    <li>Sistema de programación y gestión de partidos con asignación de fechas y canchas.</li>
+                                </ul>
+                            </div>
+                            <ul class="project-tech-list d-flex flex-wrap list-unstyled mt-3">
+                                <li class="me-3">Ionic</li><li class="me-3">PHP</li><li class="me-3">TypeScript</li><li class="me-3">MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-project mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="URL_IMAGEN_RESTAURANT_APP" class="img-fluid rounded" alt="Captura de pantalla de la app de restaurante">
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="project-details">
+                            <p class="project-type">Proyecto Destacado</p>
+                            <h3 class="project-title">Sistema de Restaurante (Ionic)</h3>
+                            <div class="project-description p-4 my-3">
+                                <ul>
+                                    <li>Sistema multi-sucursal con arquitectura jerárquica y API Gateway centralizada.</li>
+                                    <li>Módulos de gestión de reservas, control de inventario y seguimiento de órdenes en tiempo real.</li>
+                                    <li>Dashboard de reportes con gráficos interactivos de ventas y productos más consumidos.</li>
+                                </ul>
+                            </div>
+                            <ul class="project-tech-list d-flex flex-wrap list-unstyled mt-3">
+                                <li class="me-3">Ionic</li><li class="me-3">PHP</li><li class="me-3">TypeScript</li><li class="me-3">MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-project mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="URL_IMAGEN_APLICATION_EMP" class="img-fluid rounded" alt="Captura de pantalla de Application EMP">
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="project-details">
+                            <p class="project-type">Proyecto Destacado</p>
+                            <h3 class="project-title">Gestión de Productos y Costos (Ionic)</h3>
+                            <div class="project-description p-4 my-3">
+                                <ul>
+                                    <li>Sistema de gestión de productos con cálculo automático de costos y rentabilidad.</li>
+                                    <li>Backend con una API REST segura y robusta, con endpoints para reportes.</li>
+                                    <li>Dashboard con métricas empresariales clave y gráficos interactivos para análisis de rendimiento.</li>
+                                </ul>
+                            </div>
+                            <ul class="project-tech-list d-flex flex-wrap list-unstyled mt-3">
+                                <li class="me-3">Ionic</li><li class="me-3">PHP</li><li class="me-3">TypeScript</li><li class="me-3">MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="URL_A_TU_REPOSITORIO_DE_PROYECTOS" target="_blank" class="btn btn-outline-success">Ver más proyectos en GitHub</a>
+            </div>
         </div>
     </section>
 
@@ -82,114 +179,39 @@
             <div class="skills-category mt-5">
                 <h3 class="category-title">Front-end</h3>
                 <div class="row mt-4">
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg" alt="Angular" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">Angular</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/ionic/ionic-original.svg" alt="Ionic" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">Ionic</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" alt="HTML5" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">HTML5</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" alt="CSS3" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">CSS3</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">Bootstrap</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" alt="JavaScript" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg" alt="TypeScript" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">TypeScript</p>
-                        </div>
-                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/angular/angular-original.svg" alt="Angular" class="img-fluid skill-icon"><p class="skill-name mt-2">Angular</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/ionic/ionic-original.svg" alt="Ionic" class="img-fluid skill-icon"><p class="skill-name mt-2">Ionic</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/html5/html5-original.svg" alt="HTML5" class="img-fluid skill-icon"><p class="skill-name mt-2">HTML5</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/css3/css3-original.svg" alt="CSS3" class="img-fluid skill-icon"><p class="skill-name mt-2">CSS3</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="img-fluid skill-icon"><p class="skill-name mt-2">Bootstrap</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/javascript/javascript-original.svg" alt="JavaScript" class="img-fluid skill-icon"><p class="skill-name mt-2">JavaScript</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/typescript/typescript-original.svg" alt="TypeScript" class="img-fluid skill-icon"><p class="skill-name mt-2">TypeScript</p></div></div>
                 </div>
             </div>
 
             <div class="skills-category mt-5">
                 <h3 class="category-title">Back-end</h3>
                 <div class="row mt-4">
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" alt="Node.js" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">Node.js</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/php/php-original.svg" alt="PHP" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">PHP</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="Python" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">Python</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/django/django-plain.svg" alt="Django" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">Django</p>
-                        </div>
-                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" alt="Node.js" class="img-fluid skill-icon"><p class="skill-name mt-2">Node.js</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/php/php-original.svg" alt="PHP" class="img-fluid skill-icon"><p class="skill-name mt-2">PHP</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="Python" class="img-fluid skill-icon"><p class="skill-name mt-2">Python</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/django/django-plain.svg" alt="Django" class="img-fluid skill-icon"><p class="skill-name mt-2">Django</p></div></div>
                 </div>
             </div>
 
             <div class="skills-category mt-5">
                 <h3 class="category-title">Database</h3>
                 <div class="row mt-4">
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg" alt="MySQL" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">MySQL</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">PostgreSQL</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/sqlite/sqlite-original.svg" alt="SQLite" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">SQLite</p>
-                        </div>
-                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg" alt="MySQL" class="img-fluid skill-icon"><p class="skill-name mt-2">MySQL</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="img-fluid skill-icon"><p class="skill-name mt-2">PostgreSQL</p></div></div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/sqlite/sqlite-original.svg" alt="SQLite" class="img-fluid skill-icon"><p class="skill-name mt-2">SQLite</p></div></div>
                 </div>
             </div>
 
             <div class="skills-category mt-5">
                 <h3 class="category-title">Herramientas</h3>
                 <div class="row mt-4">
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
-                        <div class="skill-item text-center">
-                            <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg" alt="Git" class="img-fluid skill-icon">
-                            <p class="skill-name mt-2">Git</p>
-                        </div>
-                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4"><div class="skill-item text-center"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg" alt="Git" class="img-fluid skill-icon"><p class="skill-name mt-2">Git</p></div></div>
                 </div>
             </div>
         </div>
@@ -199,7 +221,7 @@
         <div class="container">
             <p class="what-s-next-text mb-3">¿Qué sigue?</p>
             <h2 class="get-in-touch-heading display-4 fw-bold">Ponte en Contacto</h2>
-            <p class="contact-text mx-auto mt-4 mb-5">¡Hablemos! Ya sea que tengas una pregunta, una idea de proyecto, o simplemente quieras conectar, siempre estoy feliz de escuchar. Déjame un mensaje y estaré en contacto pronto.</p>
+            <p class="contact-text mx-auto mt-4 mb-5">Si buscas a un ingeniero de software con experiencia en desarrollo web y móvil para tu equipo, no dudes en contactarme. Estoy listo para contribuir en tu próximo proyecto.</p>
             
             <div class="email-container d-inline-flex align-items-center p-3 mt-4">
                 <span id="email-to-copy" class="email-text me-3">kevinsan1835@gmail.com</span>
@@ -211,7 +233,70 @@
         </div>
     </section>
 
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="imageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/app.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const imageModal = document.getElementById('imageModal');
+        imageModal.addEventListener('show.bs.modal', function (event) {
+            
+            const carouselImages = [
+                { src: '../img/tickets/Imagen pegada.png', alt: 'Imagen de Manager Tickets 1' },
+                { src: '../img/tickets/Imagen pegada (2).png', alt: 'Imagen de Manager Tickets 2' },
+                { src: '../img/tickets/Imagen pegada (3).png', alt: 'Imagen de Manager Tickets 3' },
+                { src: '../img/tickets/Imagen pegada (5).png', alt: 'Imagen de Manager Tickets 5' },
+                { src: '../img/tickets/Imagen pegada (6).png', alt: 'Imagen de Manager Tickets 6' },
+                { src: '../img/tickets/Imagen pegada (7).png', alt: 'Imagen de Manager Tickets 7' },
+                { src: '../img/tickets/Imagen pegada (8).png', alt: 'Imagen de Manager Tickets 8' },
+               
+            ];
+
+            const carouselInner = imageModal.querySelector('.carousel-inner');
+            carouselInner.innerHTML = ''; // Limpiar el carrusel anterior
+
+            carouselImages.forEach((img, index) => {
+                const carouselItem = document.createElement('div');
+                carouselItem.classList.add('carousel-item');
+                // Hacemos que la primera imagen siempre sea la activa
+                if (index === 0) {
+                    carouselItem.classList.add('active');
+                }
+
+                const carouselImage = document.createElement('img');
+                carouselImage.src = img.src;
+                carouselImage.classList.add('d-block', 'w-100');
+                carouselImage.alt = img.alt;
+                
+                carouselItem.appendChild(carouselImage);
+                carouselInner.appendChild(carouselItem);
+            });
+        });
+    });
+    </script>
 </body>
 </html>
