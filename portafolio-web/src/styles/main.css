@@ -282,6 +282,13 @@ body {
     padding: 15px;
 }
 
+/* Nuevo CSS para las imágenes de proyectos móviles */
+.project-mobile-img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero-section h1 {
@@ -295,5 +302,12 @@ body {
     }
     .title-heading {
         font-size: 2rem;
+    }
+}
+
+/* Media query para deshacer el max-width en pantallas pequeñas */
+@media (max-width: 575.98px) {
+    .project-mobile-img {
+        max-width: 100%;
     }
 }
