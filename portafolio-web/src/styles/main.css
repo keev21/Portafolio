@@ -135,9 +135,12 @@ body {
     margin-bottom: 5rem;
 }
 
+
 .featured-project img {
-    border: 1px solid #64ffda; /* Borde sutil para las imágenes de proyectos */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    max-width: 80%;   /* Ajusta este valor según lo pequeño que lo quieras */
+    height: auto;     /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto;   /* Centra la imagen dentro de la columna */
 }
 
 .featured-project .project-type {
@@ -310,4 +313,12 @@ body {
     .project-mobile-img {
         max-width: 100%;
     }
+}
+
+/* Reducir tamaño de las imágenes de proyectos con la clase small-img */
+.featured-project.small-img img {
+    max-width: 80%;  /* Ajusta según lo pequeño que quieras */
+    height: auto;
+    display: block;
+    margin: 0 auto;   /* Centra la imagen */
 }
