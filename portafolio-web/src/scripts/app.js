@@ -8,13 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             navigator.clipboard.writeText(emailToCopy.textContent)
                 .then(() => {
                     // Feedback visual o de texto para el usuario
-                    console.log('Correo copiado al portapapeles!');
-                    // Opcional: cambiar el texto del botón temporalmente
-                    const originalText = copyButton.innerHTML;
-                    copyButton.innerHTML = '<i class="fas fa-check"></i> Copiado!';
-                    setTimeout(() => {
-                        copyButton.innerHTML = originalText;
-                    }, 2000);
+                    
                 })
                 .catch(err => {
                     console.error('Error al copiar el correo: ', err);
