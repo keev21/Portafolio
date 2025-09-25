@@ -1,0 +1,149 @@
+/* Reset y Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+  display: flex; /* Mantenemos flex para centrar */
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Contenedor CV */
+.cv-container {
+  width: 21.59cm;  /* 8.5 in */
+  min-height: 27.94cm; /* 11 in */
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  /* Ajuste: Reduce el padding superior para subir el contenido */
+  padding: 0.5cm 1.5cm 1.5cm 1.5cm;
+  box-sizing: border-box;
+  font-size: 0.85em;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  /* Ajuste: Reduce el margen inferior para acercar el encabezado a la sección siguiente */
+  margin-bottom: 5px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #3467a9;
+}
+
+.contact-info {
+  font-size: 0.75em;
+  color: #555;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Links */
+a {
+  color: #3467a9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004c7a;
+  text-decoration: underline;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: #3467a9;
+  border-bottom: 1.5px solid #3467a9;
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.summary-content p {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.experience-item,
+.education-item {
+  margin-bottom: 10px;
+}
+
+/* Títulos y Fechas */
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-title,
+.degree {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333;
+}
+
+.company-name,
+.university-name {
+  font-size: 0.8em;
+  color: #555;
+}
+
+.job-period,
+.education-period {
+  font-size: 0.75em;
+  color: #777;
+}
+
+/* Lists */
+ul {
+  margin: 3px 0 8px 18px;
+  font-size: 0.8em;
+}
+
+ul li {
+  margin-bottom: 3px;
+}
+
+/* Skills */
+.skills-content {
+  font-size: 0.8em;
+  color: #555;
+}
+
+.skills-group {
+  margin-bottom: 3px;
+}
+
+.skills-group strong {
+  color: #333;
+}
+
+/* Ajuste para imprimir */
+@media print {
+  body {
+    background: none;
+  }
+  .cv-container {
+    box-shadow: none;
+    /* Ajuste: Reduce el padding para la versión de impresión */
+    padding: 0.3cm;
+    width: auto;
+    min-height: auto;
+  }
+}
